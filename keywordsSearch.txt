@@ -20,8 +20,6 @@
 
 'Real Indian Cheque Leaf',
 
-'Real Salary Slip',
-
 'Real Indian Salary Slip',
 
 'Indian Driving License',

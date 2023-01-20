@@ -1,0 +1,34 @@
+'Real Aadhar Card',
+
+'Real Pan Card',
+
+'Real Indian Bank Statement',
+'Real Bank Statement of State Bank of India',
+'Real Bank Statement of Punjab National Bank',
+'Real Bank Statement of Union Bank of India',
+'Real Bank Statement of HDFC Bank',
+'Real Bank Statement of ICICI Bank',
+'Real Bank Statement of Kotak Bank',
+'Real Bank Statement of Bank of Baroda',
+'Real Bank Statement of Bank of India',
+'Real Bank Statement of Axis Bank',
+'Real Bank Statement of Canara Bank',
+
+'Real ITR/Form 16',
+
+'Real Cheque Leaf',
+
+'Real Indian Cheque Leaf',
+
+'Real Salary Slip',
+
+'Real Indian Salary Slip',
+
+'Indian Driving License',
+
+'Indian Voter ID',
+
+'Indian Passport inside',
+
+'Indian Utility Bill,
+

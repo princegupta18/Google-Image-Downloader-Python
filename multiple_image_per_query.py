@@ -16,7 +16,7 @@ import requests
 from PIL import Image
 
 cwd = os.getcwd()
-IMAGE_FOLDER = 'download'
+IMAGE_FOLDER = 'aadharCard'
 os.makedirs(
     name=f'{cwd}/{IMAGE_FOLDER}',
     exist_ok=True

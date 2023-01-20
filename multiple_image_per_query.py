@@ -16,7 +16,7 @@ import requests
 from PIL import Image
 
 cwd = os.getcwd()
-IMAGE_FOLDER = 'aadharCard'
+IMAGE_FOLDER = 'electricityBill'
 os.makedirs(
     name=f'{cwd}/{IMAGE_FOLDER}',
     exist_ok=True
@@ -67,7 +67,7 @@ def download_google_images(search_query: str, number_of_images: int) -> str:
 
     box = driver.find_element(
         by=By.XPATH,
-        value="//input[contains(@class,'gLFyf gsfi')]"
+        value="//input[contains(@class,'gLFyf')]"
     )
 
     box.send_keys(search_query)
@@ -167,15 +167,105 @@ def download_google_images(search_query: str, number_of_images: int) -> str:
             break
 
 tags = [
-    'Elon Musk',
-    'Tim Cook'
+    'Real Indian Electricity Bill'
+    'Electricity Bill of Central Electricity Authority',
+    'Electricity Bill of Central Electricity Regulatory Commission',
+    'Electricity Bill of Bureau of Energy Efficiency',
+    'Electricity Bill of Nuclear Power Corporation of India',
+    'Electricity Bill of PowerGrid Corporation of India',
+    'Electricity Bill of NHPC Limited',
+    'Electricity Bill of NTPC Limited',
+    'Electricity Bill of Power System Operation Corporation',
+    'Electricity Bill of Neyveli Lignite Corporation',
+    'Electricity Bill of Damodar Valley Corporation',
+    'Electricity Bill of Andhra Pradesh Power Generation Corporation',
+    'Electricity Bill of Transmission Corporation of Andhra Pradesh',
+    'Electricity Bill of Andhra Pradesh Eastern Power Distribution Company Limited',
+    'Electricity Bill of Andhra Pradesh Central Power Distribution Company Limited',
+    'Electricity Bill of Andhra Pradesh Southern Power Distribution Company Limited',
+    'Electricity Bill of Assam State Electricity Board',
+    'Electricity Bill of Bihar State Power Holding Company Limited',
+    'Electricity Bill of North Bihar Power Distribution Company Limited',
+    'Electricity Bill of South Bihar Power Distribution Company Limited',
+    'Electricity Bill of Chhattisgarh State Power Generation Company Limited',
+    'Electricity Bill of Dakshin Gujarat Vij Company Ltd.',
+    'Electricity Bill of Gujarat Urja Vikas Nigam Ltd.',
+    'Electricity Bill of Madhya Gujarat Vij Company Ltd.',
+    'Electricity Bill of Paschim Gujarat Vij Company Ltd.',
+    'Electricity Bill of Gujarat State Electricity Corporation Ltd.',
+    'Electricity Bill of Gujarat Electricity Corporation Ltd.',
+    'Electricity Bill of Uttar Gujarat Vij Company Ltd.',
+    'Electricity Bill of Dakshin Haryana Bijli Vitran Nigam',
+    'Electricity Bill of Uttar Haryana Bijli Vitran Nigam',
+    'Electricity Bill of Haryana Vidyut Prasaran Nigam Limited',
+    'Electricity Bill of Haryana Power Generation Corporation',
+    'Electricity Bill of Delhi Vidyut Board',
+    'Electricity Bill of Delhi Electricity Regulatory Commission',
+    'Electricity Bill of Delhi Transco Limited',
+    'Electricity Bill of BRPL',
+    'Electricity Bill of BYPL',
+    'Electricity Bill of TPDDL',
+    'Electricity Bill of IPGCL',
+    'Electricity Bill of PPCL',
+    'Electricity Bill of Jharkhand State Electricity Board',
+    'Electricity Bill of Karnataka Power Corporation Limited (KPCL)',
+    'Electricity Bill of Karnataka Power Transmission Corporation Limited (KPTCL)',
+    'Electricity Bill of MESCOM, Mangaluru',
+    'Electricity Bill of CESC, Mysuru',
+    'Electricity Bill of BESCOM, Bengaluru',
+    'Electricity Bill of HESCOM, Hubballi',
+    'Electricity Bill of GESCOM, Kalaburagi',
+    'Electricity Bill of Kerala State Electricity Board',
+    'Electricity Bill of Madhya Pradesh Power Generation Company Limited',
+    'Electricity Bill of Madhya Pradesh Power Transmission Company Limited',
+    'Electricity Bill of Madhya Pradesh Poorv Kshetra Vidyut Company Limited',
+    'Electricity Bill of Madhya Pradesh Madhya Kshetra Vidyut Vitaran Company Limited',
+    'Electricity Bill of Madhya Pradesh Paschim Kshetra Vidyut Vitaran Company Limited',
+    'Electricity Bill of Madhya Pradesh Power Management Company Limited',
+    'Electricity Bill of Madhya Pradesh Electricity Regulatory Commission',
+    'Electricity Bill of Maharashtra State Electricity Board',
+    'Electricity Bill of Maharashtra State Electricity Distribution Company Limited',
+    'Electricity Bill of Maharashtra State Electricity Transmission Company Limited',
+    'Electricity Bill of Maharashtra State Power Generation Company Limited',
+    'Electricity Bill of Rajasthan Rajya Vidyut Utpadan Nigam',
+    'Electricity Bill of Rajasthan Rajya Vidyut Prasaran Nigam Limited',
+    'Electricity Bill of Uttar Pradesh Rajya Vidyut Utpadan Nigam (UPRVUN)',
+    'Electricity Bill of Uttar Pradesh Rajya Vidyut Utpadan Nigam Limited (UPRVUNL)',
+    'Electricity Bill of Uttar Pradesh Power Corporation Limited (UPPCL)',
+    'Electricity Bill of UP Power Transmission Corporation Limited (UPPTCL)',
+    'Electricity Bill of UP Jal Vidyut Nigam Limited (UPJVNL)',
+    'Electricity Bill of West Bengal Power Development Corporation Limited',
+    'Electricity Bill of West Bengal State Electricity Board',
+    'Electricity Bill of CESC',
+    'Electricity Bill of Odisha Hydro Power Corporation',
+    'Electricity Bill of Odisha Power Generation Corporation',
+    'Electricity Bill of Odisha Electricity Regulatory Commission',
+    'Electricity Bill of Central Electricity Supply Utility of Odisha',
+    'Electricity Bill of Western Electricity Supply Company of Odisha',
+    'Electricity Bill of Odisha Power Transmission Corporation Limited',
+    'Electricity Bill of TP Northern Odisha Distribution Limited (TPNODL)',
+    'Electricity Bill of TNEB Limited',
+    'Electricity Bill of Tamil Nadu Generation and Distribution Corporation Limited',
+    'Electricity Bill of Tamil Nadu Transmission Corporation Limited',
+    'Electricity Bill of Tamil Nadu Energy Development Agency',
+    'Electricity Bill of Tamil Nadu Electrical Licensing Board',
+    'Electricity Bill of Tamil Nadu Electricity Regulatory Commission',
+    'Electricity Bill of Tamil Nadu Electrical Inspectorate',
+    'Electricity Bill of Telangana Power Generation Corporation',
+    'Electricity Bill of Transmission Corporation of Telangana',
+    'Electricity Bill of Telangana State Northern Power Distribution Company Limited',
+    'Electricity Bill of Telangana State Southern Power Distribution Company Limited',
+    'Electricity Bill of Punjab State Power Corporation Limited',
+    'Electricity Bill of Punjab State Power Transmission Corporation Limit'
+
+
 ]
 
 for tag in tags:
     print(f'{"="*10} Downloding for the tag - {tag} {"="*10}')
     download_google_images(
         tag,
-        5
+        3
     )
     print(f'{"="*10} Finished downloding for the tag - {tag} {"="*10}')
 

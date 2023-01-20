@@ -16,7 +16,7 @@ import requests
 from PIL import Image
 
 cwd = os.getcwd()
-IMAGE_FOLDER = 'gasUtilityBill'
+IMAGE_FOLDER = 'mobileBill'
 os.makedirs(
     name=f'{cwd}/{IMAGE_FOLDER}',
     exist_ok=True
@@ -167,7 +167,7 @@ def download_google_images(search_query: str, number_of_images: int) -> str:
             break
 
 tags = [
-    'Gas utility bill Indian'
+    'Mobile Bill',
 ]
 
 for tag in tags:
